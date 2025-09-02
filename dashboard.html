@@ -6,7 +6,6 @@
   <title>แดชบอร์ด Smart Petanque Judge</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
   <style>
-    /* --- โครงสร้างหลัก --- */
     body {
       font-family: 'Kanit', sans-serif;
       background-color: #f0f4f8;
@@ -18,11 +17,10 @@
       flex-direction: column;
       align-items: center;
     }
-
     header {
       background: linear-gradient(135deg, #007f7f, #00b4d8);
       color: #e0f7fa;
-      padding: 2rem;
+      padding: 2rem 2rem;
       width: 100%;
       max-width: 960px;
       text-align: center;
@@ -31,30 +29,26 @@
       letter-spacing: 1.2px;
       margin-bottom: 2rem;
     }
-
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: 700;
       text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
       margin-bottom: 0.4rem;
     }
-
     header p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: 300;
       letter-spacing: 0.5px;
       margin: 0;
     }
-
     main {
       width: 100%;
       max-width: 960px;
       background: white;
       border-radius: 15px;
-      padding: 2rem 2rem;
+      padding: 2rem 2.5rem;
       box-shadow: 0 10px 25px rgba(0, 128, 128, 0.12);
     }
-
     h2 {
       font-size: 1.7rem;
       margin-bottom: 1rem;
@@ -63,13 +57,10 @@
       padding-bottom: 0.5rem;
       letter-spacing: 0.8px;
     }
-
-    /* --- ปุ่มลบทั้งหมด --- */
     form#deleteAllForm {
       margin-bottom: 1.5rem;
       text-align: right;
     }
-
     form#deleteAllForm button {
       background-color: #e63946;
       color: white;
@@ -80,20 +71,14 @@
       font-size: 1rem;
       transition: background-color 0.3s ease;
     }
-
     form#deleteAllForm button:hover {
       background-color: #b02a36;
     }
-
-    /* --- ตารางแสดงผล --- */
     table {
       width: 100%;
       border-collapse: collapse;
       font-size: 1rem;
-      table-layout: auto;
-      word-wrap: break-word;
     }
-
     thead th {
       background: linear-gradient(135deg, #00b4d8, #007f7f);
       color: #e0f7fa;
@@ -102,30 +87,25 @@
       letter-spacing: 0.5px;
       border-radius: 8px 8px 0 0;
     }
-
     tbody tr:hover {
       background-color: #caf0f8;
       transition: background-color 0.3s ease;
     }
-
     tbody td {
       padding: 12px;
       border-bottom: 1px solid #ddd;
       color: #023e8a;
       vertical-align: middle;
     }
-
     tbody tr:last-child td {
       border-bottom: none;
     }
-
     tbody tr td[colspan] {
       color: #999;
       font-style: italic;
       text-align: center;
     }
-
-    /* ปุ่มลบแต่ละแถว */
+    /* ปุ่มลบในแต่ละแถว */
     .delete-btn {
       background-color: #e63946;
       color: white;
@@ -136,11 +116,9 @@
       font-size: 0.9rem;
       transition: background-color 0.3s ease;
     }
-
     .delete-btn:hover {
       background-color: #b02a36;
     }
-
     /* ลิงก์กลับหน้าแรก */
     .back-link {
       display: inline-block;
@@ -150,12 +128,9 @@
       text-decoration: none;
       transition: color 0.3s ease;
     }
-
     .back-link:hover {
       color: #004f4f;
     }
-
-    /* --- Footer --- */
     footer {
       margin-top: 3rem;
       padding: 1.5rem 0;
@@ -168,27 +143,6 @@
       letter-spacing: 1px;
       border-radius: 15px 15px 0 0;
       text-align: center;
-    }
-
-    /* --- Responsive สำหรับมือถือ --- */
-    @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      header p { font-size: 1rem; }
-      main { padding: 1.5rem 1rem; }
-      table, thead, tbody, th, td, tr { display: block; width: 100%; }
-      thead tr { display: none; }
-      tbody td {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      tbody td::before {
-        content: attr(data-label);
-        font-weight: 600;
-        color: #007f7f;
-      }
-      tbody td:last-child { border-bottom: none; }
     }
   </style>
 </head>
@@ -223,13 +177,13 @@
           {% if matches %}
             {% for match in matches %}
               <tr>
-                <td data-label="ID">{{ match['id'] }}</td>
-                <td data-label="ชื่อแมตช์">{{ match['match_name'] }}</td>
-                <td data-label="ประเภทการแข่งขัน">{{ match['match_type'] }}</td>
-                <td data-label="คะแนนทีม A">{{ match['team_a_score'] }}</td>
-                <td data-label="คะแนนทีม B">{{ match['team_b_score'] }}</td>
-                <td data-label="วันที่-เวลา">{{ match['timestamp'] }}</td>
-                <td data-label="จัดการ">
+                <td>{{ match['id'] }}</td>
+                <td>{{ match['match_name'] }}</td>
+                <td>{{ match['match_type'] }}</td>
+                <td>{{ match['team_a_score'] }}</td>
+                <td>{{ match['team_b_score'] }}</td>
+                <td>{{ match['timestamp'] }}</td>
+                <td>
                   <form action="/delete_match/{{ match['id'] }}" method="post" style="display:inline;">
                     <button type="submit" class="delete-btn" onclick="return confirm('ลบรายการนี้ใช่หรือไม่?')">ลบ</button>
                   </form>
@@ -247,7 +201,8 @@
   </main>
 
   <footer>
-    <p>2025 by คิม, กาย | โปรเจกต์ Smart Petanque Judge</p>
+    <p>2025 by คิม,กาย | โปรเจกต์ Smart Petanque Judge</p>
   </footer>
 </body>
 </html>
+
