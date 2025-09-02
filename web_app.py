@@ -45,7 +45,7 @@ print("[+] Loading YOLOv8 model...")
 model = YOLO(MODEL_PATH)
 
 REAL_JACK_DIAMETER_CM = 3.0
-REAL_BALL_DIAMETER_CM = 7.0
+REAL_BALL_DIAMETER_CM = 7.0  # เพิ่มเส้นผ่านศูนย์กลางลูกเปตอง
 
 def generate_frames():
     while True:
@@ -99,6 +99,7 @@ def generate_frames():
         yield (b'--frame\r\nContent-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
 
 # --- Routes ---
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -123,7 +124,7 @@ def dashboard():
     matches = []
     for row in rows:
         dt = datetime.strptime(row['timestamp'], '%Y-%m-%d %H:%M:%S')
-        dt_th = dt + timedelta(hours=7)
+        dt_th = dt + timedelta(hours=7)  # UTC+7
 
         day = dt_th.day
         month = thai_months[dt_th.month]
@@ -186,7 +187,7 @@ def delete_all_matches():
     flash('ลบข้อมูลแมตช์ทั้งหมดเรียบร้อยแล้ว')
     return redirect(url_for('dashboard'))
 
-# --- API for image detection ---
+# --- API for image detection (unchanged) ---
 def detect_from_image(img):
     results = model(img, verbose=False)[0]
 
@@ -265,7 +266,5 @@ def api_live_detections():
         return jsonify({'error': 'ไม่สามารถอ่านกล้องได้'}), 500
     return detect_from_image(frame)
 
-# --- RUN APP ---
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
