@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Detecção de Objetos em tempo real com drones
 
 ## ATENÇÃO! Este repositório está sendo atualizado com as intruções, porém os códigos já estão disponibilizados na sua íntegra.
@@ -21,3 +22,6 @@ Devido à restrição de tamanhos de arquivos no Github, não foi possível disp
 
 Para esse script funcionar, [baixe este arquivo zip aqui](https://www.dropbox.com/s/ghe0ksnom26skah/yolo-coco.zip?dl=0) e coloque todo o conteúdo extraído (3 arquivos no total) dentro do diretório `coco-yolo`.
 ป
+=======
+# smart-petanque-judge
+>>>>>>> 10850d99a1933c11963374d6ed1fe098438c5a37
