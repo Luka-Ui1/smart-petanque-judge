@@ -1,14 +1,31 @@
-/* static/app.js - Smart Petanque Judge (GitHub Pages friendly) */
+/* static/app.js - Smart Petanque Judge (GitHub Pages + Server friendly) */
 /* รองรับทั้งโหมด static (ไม่มีเซิร์ฟเวอร์) และโหมดมี API จริง */
 /* eslint-disable no-console */
 (function () {
   'use strict';
 
+  // ====== ตั้งค่า URL แบ็กเอนด์เมื่อเปิดจาก GitHub Pages ======
+  // ตัวอย่าง: const BASE_API = "https://xxxx-xxxx.ngrok-free.app";
+  // ถ้ารันบนเซิร์ฟเวอร์ Flask โดยตรง (ไม่ใช่ github.io) ให้ปล่อยเป็น '' ได้
+  const BASE_API = location.hostname.endsWith('github.io')
+    ? '' // ← ใส่ URL เซิร์ฟเวอร์ Flask ของคุณที่นี่ถ้าต้องการเรียกโมเดลจาก GitHub Pages
+    : '';
+
+  const api = (path) => (BASE_API ? `${BASE_API}${path}` : path);
+
   // ---------- DOM helpers ----------
   const $ = (id) => document.getElementById(id);
 
-  // เดิม
-  const liveImage       = $('liveImage');   // ใช้เฉพาะโหมดเดิมที่เป็น <img> + /video_feed
+  // เดิม (รองรับหน้าเก่าที่ใช้ <img id="liveImage"> กับ /video_feed)
+  const liveImage       = $('liveImage');
+
+  // ใหม่ (ใช้ getUserMedia)
+  const liveVideo   = $('liveVideo');     // <video> สำหรับกล้องอุปกรณ์
+  const startBtn    = $('startCamBtn');
+  const toggleBtn   = $('toggleCamBtn');
+  const cameraSel   = $('cameraSelect');
+  const torchBtn    = $('torchBtn');
+
   const canvas          = $('canvas');
   const ctx             = canvas?.getContext('2d');
   const teamAScoreElem  = $('teamAScore');
@@ -25,15 +42,8 @@
   const saveMatchBtn    = $('saveMatchBtn');
   const saveLiveBtn     = $('saveLiveBtn');
 
-  // ใหม่ (ถ้าคุณอัปเดต HTML ตามที่คุยไว้)
-  const liveVideo   = $('liveVideo');     // <video> สำหรับ getUserMedia
-  const startBtn    = $('startCamBtn');
-  const toggleBtn   = $('toggleCamBtn');
-  const cameraSel   = $('cameraSelect');
-  const torchBtn    = $('torchBtn');
-
   // ---------- Env ----------
-  const isStatic = location.hostname.endsWith('github.io') || location.protocol === 'file:';
+  const isStaticFront = location.hostname.endsWith('github.io') || location.protocol === 'file:';
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   // ---------- State ----------
@@ -200,22 +210,21 @@
 
     const file = fileInput.files[0];
 
-    // โหมด static: ไม่มี API ให้เรียก -> แค่พรีวิว + วาดลงแคนวาส
-    if (isStatic) {
-      setStatus("โหมด Static: แสดงภาพตัวอย่างบนแคนวาส (ยังไม่เรียกโมเดล/เซิร์ฟเวอร์)");
+    // ถ้า front เป็น github.io และยังไม่ได้ตั้ง BASE_API → แค่พรีวิว
+    if (isStaticFront && !BASE_API) {
+      setStatus("โหมด Static: แสดงภาพบนแคนวาส (ยังไม่เรียกโมเดล/เซิร์ฟเวอร์)");
       const img = new Image();
       img.onload = () => {
         canvas.width = img.width;
         canvas.height = img.height;
         ctx.clearRect(0,0,canvas.width,canvas.height);
         ctx.drawImage(img, 0, 0);
-        // TODO: สามารถผูก TF.js/ONNX Runtime Web มารันบนเบราเซอร์ได้ภายหลัง
       };
       img.src = URL.createObjectURL(file);
       return;
     }
 
-    // โหมดมีเซิร์ฟเวอร์: เรียก /api/detect ตามเดิม
+    // โหมดมีเซิร์ฟเวอร์ (หรือ github.io + BASE_API ถูกตั้งค่า)
     const formData = new FormData();
     formData.append("image", file);
     formData.append("competition_type", competitionTypeSelect?.value || '');
@@ -223,7 +232,7 @@
 
     setStatus("⏳ กำลังส่งภาพไปตรวจจับ...");
     try {
-      const res = await fetch("/api/detect", { method: "POST", body: formData });
+      const res = await fetch(api("/api/detect"), { method: "POST", body: formData, mode: 'cors' });
       const data = await res.json();
 
       if (data.error) {
@@ -252,18 +261,17 @@
   // ---------- Live (server) ----------
   function loadLiveStream() {
     if (!liveImage) return;
-    // เดิม: ดึง /video_feed มาแสดงใน <img> (ใช้ไม่ได้บน GitHub Pages)
-    liveImage.src = "/video_feed?" + new Date().getTime();
+    // เดิม: ดึง /video_feed มาแสดงใน <img> (สำหรับ github.io ให้ใช้ BASE_API)
+    const url = api("/video_feed") + "?" + Date.now();
+    liveImage.src = url;
   }
 
   function refreshLiveStream() {
-    if (isStatic) {
-      // บน GitHub Pages: ไม่มี live_detections ให้ดึง
-      return;
-    }
-    // โหมดมีเซิร์ฟเวอร์
-    loadLiveStream();
-    fetch("/api/live_detections")
+    // ไม่มี live_detections ใน static เว้นแต่ตั้ง BASE_API
+    if (isStaticFront && !BASE_API) return;
+
+    if (liveImage) loadLiveStream();
+    fetch(api("/api/live_detections"), { mode: 'cors' })
       .then((res) => res.json())
       .then((data) => {
         if (data.error) {
@@ -274,15 +282,16 @@
         updateScores(data.score_plain, data.score_patterned);
         setStatus("✅ อัพเดตภาพสดและข้อมูลตรวจจับ");
       })
-      .catch(() => {
+      .catch((e) => {
+        console.warn(e);
         setStatus("⚠️ ไม่สามารถโหลดข้อมูลตรวจจับภาพสดได้");
       });
   }
 
   // ---------- Save match ----------
   function saveMatchToServer({ matchName, matchType, scoreA, scoreB }) {
-    if (isStatic) {
-      // ไม่มีเซิร์ฟเวอร์ -> เก็บ localStorage เป็นเดโม
+    // โหมด github.io แต่ไม่มี BASE_API → เก็บ localStorage เป็นเดโม
+    if (isStaticFront && !BASE_API) {
       const key = 'spj:matches';
       const list = JSON.parse(localStorage.getItem(key) || '[]');
       list.push({ ts: Date.now(), matchName, matchType, scoreA, scoreB });
@@ -292,9 +301,10 @@
       return;
     }
 
-    fetch("/save_match", {
+    fetch(api("/save_match"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
+      mode: 'cors',
       body: JSON.stringify({
         match_name: matchName,
         match_type: matchType,
@@ -323,7 +333,7 @@
 
   // ---------- Camera (getUserMedia) ----------
   async function listCameras() {
-    const devices = await navigator.mediaDevices.enumerateDevices();
+    const devices = await navigator.mediaDevices.enumerateDevices().catch(()=>[]);
     const cams = devices.filter(d => d.kind === 'videoinput');
 
     if (cameraSel) {
@@ -437,86 +447,71 @@
   }
 
   // ---------- Events ----------
-  if (uploadBtn) {
-    uploadBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      uploadAndDetect();
-    });
-  }
+  uploadBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    uploadAndDetect();
+  });
 
-  if (fileInput) {
-    fileInput.addEventListener("change", (e) => {
-      previewFiles(e.target.files);
-    });
-  }
+  fileInput?.addEventListener("change", (e) => {
+    previewFiles(e.target.files);
+  });
 
-  if (resetBtn) {
-    resetBtn.addEventListener("click", () => {
-      if (canvas && ctx) ctx.clearRect(0,0,canvas.width,canvas.height);
-      if (filePreview) filePreview.innerHTML = "";
-      if (fileInput) fileInput.value = "";
-      if (matchNameInput) matchNameInput.value = "";
-      updateScores(0,0);
-      setStatus('');
-    });
-  }
+  resetBtn?.addEventListener("click", () => {
+    if (canvas && ctx) ctx.clearRect(0,0,canvas.width,canvas.height);
+    if (filePreview) filePreview.innerHTML = "";
+    if (fileInput) fileInput.value = "";
+    if (matchNameInput) matchNameInput.value = "";
+    updateScores(0,0);
+    setStatus('');
+  });
 
-  if (saveMatchBtn) {
-    saveMatchBtn.addEventListener("click", () => {
-      const matchName = (matchNameInput?.value || '').trim();
-      const matchType = competitionTypeSelect?.value || '';
-      const scoreA = parseInt(teamAScoreElem?.textContent || '0', 10) || 0;
-      const scoreB = parseInt(teamBScoreElem?.textContent || '0', 10) || 0;
-      if (!matchName) return alert("กรุณากรอกชื่อแมตช์ก่อนบันทึก");
+  saveMatchBtn?.addEventListener("click", () => {
+    const name = (matchNameInput?.value || '').trim();
+    const type = competitionTypeSelect?.value || '';
+    const scoreA = parseInt(teamAScoreElem?.textContent || '0', 10) || 0;
+    const scoreB = parseInt(teamBScoreElem?.textContent || '0', 10) || 0;
+    if (!name) return alert("กรุณากรอกชื่อแมตช์ก่อนบันทึก");
 
-      saveMatchToServer({ matchName, matchType, scoreA, scoreB });
-    });
-  }
+    saveMatchToServer({ matchName: name, matchType: type, scoreA, scoreB });
+  });
 
-  if (saveLiveBtn) {
-    saveLiveBtn.addEventListener("click", () => {
-      const matchName = (matchNameInput?.value || '').trim();
-      const matchType = competitionTypeSelect?.value || '';
-      const scoreA = parseInt(teamAScoreElem?.textContent || '0', 10) || 0;
-      const scoreB = parseInt(teamBScoreElem?.textContent || '0', 10) || 0;
+  saveLiveBtn?.addEventListener("click", () => {
+    const name = (matchNameInput?.value || '').trim();
+    const type = competitionTypeSelect?.value || '';
+    const scoreA = parseInt(teamAScoreElem?.textContent || '0', 10) || 0;
+    const scoreB = parseInt(teamBScoreElem?.textContent || '0', 10) || 0;
 
-      if (!matchName) return alert("กรุณากรอกชื่อแมตช์ก่อนบันทึกคะแนนจากภาพสด");
+    if (!name) return alert("กรุณากรอกชื่อแมตช์ก่อนบันทึกคะแนนจากภาพสด");
 
-      // ถ้ามี liveVideo ให้จับเฟรมลงแคนวาสก่อน (เพื่อโชว์/เตรียมส่ง infer)
-      if (liveVideo && stream) {
-        drawVideoFrameToCanvas();
-      }
-      saveMatchToServer({ matchName, matchType, scoreA, scoreB });
-    });
-  }
+    // ถ้ามี liveVideo ให้จับเฟรมลงแคนวาสก่อน (เพื่อโชว์/เก็บภาพ)
+    if (liveVideo && stream) {
+      drawVideoFrameToCanvas();
+    }
+    saveMatchToServer({ matchName: name, matchType: type, scoreA, scoreB });
+  });
 
-  // ปุ่มกล้องใหม่ (ถ้ามีใน HTML)
-  if (startBtn) {
-    startBtn.addEventListener('click', async () => {
-      try { await startCameraPreferred(); } catch {}
-    });
-  }
-  if (toggleBtn) {
-    toggleBtn.addEventListener('click', async () => {
-      try { await toggleCamera(); } catch {}
-    });
-  }
-  if (cameraSel) {
-    cameraSel.addEventListener('change', async () => {
-      currentDeviceId = cameraSel.value;
-      try { await startWithConstraints({ deviceId: currentDeviceId }); } catch {}
-    });
-  }
-  if (torchBtn) {
-    torchBtn.addEventListener('click', async () => {
-      await setTorch(!torchOn);
-    });
-  }
+  // ปุ่มกล้องใหม่
+  startBtn?.addEventListener('click', async () => {
+    try { await startCameraPreferred(); } catch {}
+  });
+
+  toggleBtn?.addEventListener('click', async () => {
+    try { await toggleCamera(); } catch {}
+  });
+
+  cameraSel?.addEventListener('change', async () => {
+    currentDeviceId = cameraSel.value;
+    try { await startWithConstraints({ deviceId: currentDeviceId }); } catch {}
+  });
+
+  torchBtn?.addEventListener('click', async () => {
+    await setTorch(!torchOn);
+  });
 
   // ---------- Init ----------
   (async function init() {
-    // โหมดเซิร์ฟเวอร์เดิม: เริ่มดึงภาพสด + โพลข้อมูล
-    if (!isStatic && liveImage) {
+    // ถ้ารันในเซิร์ฟเวอร์ Flask (หรือ github.io + BASE_API) และยังใช้โหมด liveImage เดิม
+    if ((!isStaticFront || BASE_API) && liveImage) {
       loadLiveStream();
       setInterval(refreshLiveStream, 1000);
     }
@@ -524,7 +519,7 @@
     // เตรียมรายการกล้อง ถ้ามี UI กล้อง
     if (navigator.mediaDevices?.enumerateDevices && (startBtn || cameraSel)) {
       try { await navigator.mediaDevices.enumerateDevices(); } catch {}
-      // หมายเหตุ: labels จะโชว์หลังจากได้ permission ครั้งแรก
+      // หมายเหตุ: labels จะโชว์หลังอนุญาตกล้องครั้งแรก
     }
 
     // คะแนนเริ่มต้น
@@ -533,10 +528,11 @@
       parseInt(teamBScoreElem?.textContent || '0', 10) || 0
     );
 
-    if (isStatic && liveImage) {
-      // คำแนะนำผู้ใช้ให้อัปเดต HTML เป็น <video> + ปุ่ม
-      console.warn('คุณกำลังรันบน GitHub Pages: /video_feed ใช้ไม่ได้ แนะนำให้อัปเดต HTML เป็น <video id="liveVideo"> และใช้ปุ่มเริ่มกล้อง/สลับกล้อง');
-      setStatus('โหมด Static: โปรดกด "เริ่มกล้อง" เพื่อใช้กล้องอุปกรณ์ (แทน /video_feed)');
+    if (isStaticFront && !BASE_API) {
+      if (liveImage) {
+        console.warn('คุณอยู่บน GitHub Pages: /video_feed ใช้ไม่ได้ → แนะนำใช้ปุ่ม "เริ่มกล้อง" (getUserMedia)');
+      }
+      setStatus('โหมด Static: กล้องอุปกรณ์ใช้งานได้, การตรวจจับต้องตั้งค่า BASE_API ให้ชี้ไปที่เซิร์ฟเวอร์ Flask');
     }
   })();
 
