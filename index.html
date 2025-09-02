@@ -4,115 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Smart Petanque Judge</title>
-  <!-- ใช้ path แบบ relative -->
-  <link rel="stylesheet" href="static/style.css" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- PWA manifest -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/style.css" />
+
+  <!-- PWA -->
   <link rel="manifest" href="static/manifest.json">
   <meta name="theme-color" content="#00b4d8">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
-<body>
-  <header>
-    <h1>🎯 Smart Petanque Judge</h1>
-    <p>ระบบตรวจจับลูกเปตองและคำนวณคะแนนแบบเรียลไทม์</p>
-    <button id="dashboardBtn" class="btn">📊 ดูแดชบอร์ดการแข่งขัน</button>
+<body style="font-family: 'Kanit', sans-serif; background-color: #f8f9fa;">
+
+  <!-- Header -->
+  <header class="text-center bg-primary text-white py-4 shadow-sm">
+    <h1 class="fw-bold mb-1" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">🎯 Smart Petanque Judge</h1>
+    <p class="mb-3">ระบบตรวจจับลูกเปตองและคำนวณคะแนนแบบเรียลไทม์</p>
+    <button id="dashboardBtn" class="btn btn-light fw-bold">📊 ดูแดชบอร์ดการแข่งขัน</button>
   </header>
 
-  <main>
-    <!-- ส่วนชื่อแมตช์ (คงเดิม) -->
-    <section style="max-width: 960px; margin: 2rem auto; padding: 1.5rem 2rem; background: #e0f9f9; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,127,127,0.25);">
-      <label for="matchNameInput" style="font-weight: 600; color: #007f7f; font-size: 1.2rem;">ชื่อแมตช์:</label>
-      <input type="text" id="matchNameInput" name="match_name" placeholder="กรอกชื่อแมตช์ที่นี่" style="padding: 0.6rem 1.2rem; width: 320px; border-radius: 8px; border: 2px solid #00b4d8; margin-left: 1rem; font-size: 1rem;" />
-      <button id="saveMatchBtn" style="margin-left: 1rem; padding: 0.6rem 1.2rem; font-size: 1rem; border-radius: 8px; background-color: #00b4d8; color: white; border: none; cursor: pointer;">💾 บันทึกแมตช์</button>
+  <main class="container my-4">
+
+    <!-- ชื่อแมตช์ -->
+    <section class="p-3 p-md-4 bg-info bg-opacity-10 rounded shadow-sm mb-4">
+      <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3">
+        <label for="matchNameInput" class="fw-semibold text-primary" style="font-size: 1.2rem;">ชื่อแมตช์:</label>
+        <input type="text" id="matchNameInput" name="match_name" class="form-control" style="max-width: 320px;" placeholder="กรอกชื่อแมตช์ที่นี่" />
+        <button id="saveMatchBtn" class="btn btn-primary fw-bold">💾 บันทึกแมตช์</button>
+      </div>
     </section>
 
-    <!-- เลือกประเภทแข่ง (คงเดิม) -->
-    <section class="competition-type-section" style="max-width: 960px; margin: 1rem auto 2rem auto; padding: 1rem 1.5rem 0.7rem 1.5rem; background: #fefefe; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,127,127,0.1); overflow: hidden;">
-      <h2 style="margin: 0 0 0.3rem 0; font-weight: 700;">เลือกประเภทการแข่งขัน</h2>
-      <select id="competitionType" name="competition_type" class="competition-select" style="padding: 0.45rem 1rem; font-size: 1rem; border-radius: 8px; border: 2px solid #00b4d8; max-width: 320px; display: block; margin-top: 0;">
+    <!-- ประเภทการแข่งขัน -->
+    <section class="p-3 bg-white rounded shadow-sm mb-4">
+      <h2 class="fw-bold mb-2">เลือกประเภทการแข่งขัน</h2>
+      <select id="competitionType" name="competition_type" class="form-select" style="max-width: 320px;">
         <option value="singles">คู่เดี่ยว (Singles)</option>
         <option value="doubles">คู่ทีม (Doubles)</option>
         <option value="team">ทีม (Team)</option>
       </select>
     </section>
 
-    <!-- ====== ภาพสดจากกล้อง (เพิ่มความเป็นมิตรกับมือถือ) ====== -->
-    <section class="video-section" style="max-width: 960px; margin: 2rem auto;">
-      <h2>ภาพสดจากกล้อง</h2>
-
-      <div class="video-controls">
-        <button id="startCamBtn" class="btn">▶️ เริ่มกล้อง</button>
+    <!-- ภาพสดจากกล้อง -->
+    <section class="mb-4">
+      <h2 class="fw-bold mb-3">ภาพสดจากกล้อง</h2>
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <button id="startCamBtn" class="btn btn-success">▶️ เริ่มกล้อง</button>
         <button id="toggleCamBtn" class="btn btn-secondary" type="button">🔁 สลับกล้อง</button>
-        <select id="cameraSelect" class="select"></select>
+        <select id="cameraSelect" class="form-select" style="width: auto;"></select>
         <button id="torchBtn" class="btn btn-secondary" type="button">💡 ไฟฉาย</button>
       </div>
-
-      <div class="video-wrapper">
-        <video id="liveVideo" autoplay playsinline muted></video>
+      <div class="ratio ratio-4x3 mb-3" style="background:#000; border-radius: 10px; overflow:hidden;">
+        <video id="liveVideo" autoplay playsinline muted style="width: 100%; height: 100%; object-fit: cover;"></video>
       </div>
-
-      <div class="video-actions">
-        <button id="saveLiveBtn" class="btn primary">
-          💾 บันทึกคะแนนจากภาพสด
-        </button>
+      <div>
+        <button id="saveLiveBtn" class="btn btn-primary w-100 fw-bold">💾 บันทึกคะแนนจากภาพสด</button>
       </div>
     </section>
-    <!-- ================================================ -->
 
-    <!-- แคนวาสผลตรวจจับ (คงเดิม) -->
-    <section class="canvas-section" style="max-width: 960px; margin: 2rem auto;">
-      <h2>ผลการตรวจจับ</h2>
-      <canvas id="canvas" style="width: 100%; border-radius: 8px; border: 1px solid #00b4d8;"></canvas>
+    <!-- ผลการตรวจจับ -->
+    <section class="mb-4">
+      <h2 class="fw-bold mb-2">ผลการตรวจจับ</h2>
+      <canvas id="canvas" class="border border-primary rounded w-100" style="max-height: 400px;"></canvas>
     </section>
 
-    <!-- อัปโหลดภาพ (คงเดิม) -->
-    <section class="upload-section" style="max-width: 960px; margin: 2rem auto; padding: 1.5rem 2rem; background: #f0f4f8; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,127,127,0.15);">
-      <h2>อัปโหลดภาพเพื่อตรวจจับ</h2>
-      <form id="uploadForm">
-        <input type="file" id="imageInput" name="image" accept="image/*" required />
-        <button id="uploadBtn" class="btn" type="submit" style="margin-left: 1rem;">อัปโหลดและตรวจจับ</button>
-        <button id="resetBtn" class="btn btn-secondary" type="button" style="margin-left: 1rem;">รีเซ็ต</button>
-        <div id="filePreview" class="file-preview" style="margin-top: 1rem;"></div>
+    <!-- อัปโหลดภาพ -->
+    <section class="p-3 bg-light rounded shadow-sm mb-4">
+      <h2 class="fw-bold mb-3">อัปโหลดภาพเพื่อตรวจจับ</h2>
+      <form id="uploadForm" class="d-flex flex-wrap gap-2">
+        <input type="file" id="imageInput" name="image" class="form-control" accept="image/*" required />
+        <button id="uploadBtn" class="btn btn-primary" type="submit">อัปโหลดและตรวจจับ</button>
+        <button id="resetBtn" class="btn btn-secondary" type="button">รีเซ็ต</button>
       </form>
+      <div id="filePreview" class="mt-3"></div>
     </section>
 
-    <!-- คะแนน (คงเดิม) -->
-    <section class="score-section" style="max-width: 960px; margin: 2rem auto;">
-      <h2>คะแนน</h2>
-      <div class="score-box" style="display: flex; gap: 2rem; flex-wrap: wrap;">
-        <div class="team team-a" style="flex: 1; min-width:260px; background: #d9f6e6; padding: 1rem; border-radius: 10px;">
-          <h3>ทีม A (ลูกเปตองลาย) สีเขียว</h3>
-          <div class="score-value" id="teamAScore" style="font-size: 2.5rem; font-weight: 700;">0</div>
-          <div class="progress-bar" style="background: #bde5d1; border-radius: 10px; overflow: hidden; height: 20px;">
-            <div id="progressA" class="progress-fill" style="background: #3ac66b; height: 100%; width: 0;"></div>
+    <!-- คะแนน -->
+    <section class="mb-4">
+      <h2 class="fw-bold mb-3">คะแนน</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="p-3 bg-success bg-opacity-10 rounded">
+            <h3 class="mb-2">ทีม A (ลูกเปตองลาย) สีเขียว</h3>
+            <div id="teamAScore" class="fs-1 fw-bold">0</div>
+            <div class="progress" style="height: 20px;">
+              <div id="progressA" class="progress-bar bg-success" style="width: 0%;"></div>
+            </div>
           </div>
         </div>
-        <div class="team team-b" style="flex: 1; min-width:260px; background: #d9e7f6; padding: 1rem; border-radius: 10px;">
-          <h3>ทีม B (ลูกเปตองธรรมดา) สีน้ำเงิน</h3>
-          <div class="score-value" id="teamBScore" style="font-size: 2.5rem; font-weight: 700;">0</div>
-          <div class="progress-bar" style="background: #b7c9e8; border-radius: 10px; overflow: hidden; height: 20px;">
-            <div id="progressB" class="progress-fill" style="background: #396fbc; height: 100%; width: 0;"></div>
+        <div class="col-md-6">
+          <div class="p-3 bg-primary bg-opacity-10 rounded">
+            <h3 class="mb-2">ทีม B (ลูกเปตองธรรมดา) สีน้ำเงิน</h3>
+            <div id="teamBScore" class="fs-1 fw-bold">0</div>
+            <div class="progress" style="height: 20px;">
+              <div id="progressB" class="progress-bar bg-primary" style="width: 0%;"></div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="scoreDisplay" class="score-display" style="margin-top: 1rem; font-size: 1.4rem; font-weight: 600; color: #007f7f;"></div>
+      <div id="scoreDisplay" class="mt-3 fs-5 fw-semibold text-primary"></div>
     </section>
 
-    <!-- สถานะ (คงเดิม) -->
-    <section class="status-section" style="max-width: 960px; margin: 2rem auto;">
-      <div id="status" class="status-message" style="font-size: 1.1rem; color: #007f7f;"></div>
+    <!-- สถานะ -->
+    <section class="mb-4">
+      <div id="status" class="fs-6 text-primary"></div>
     </section>
+
   </main>
 
-  <footer>
-    <p>2025 by คิม,กาย | โปรเจกต์ Smart Petanque Judge</p>
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-dark text-white mt-4">
+    <p class="mb-0">2025 by คิม,กาย | โปรเจกต์ Smart Petanque Judge</p>
   </footer>
 
-  <!-- JS แบบ relative path (ใส่ ?v=6 กันแคชได้) -->
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="static/app.js?v=6"></script>
 
   <script>
@@ -120,11 +132,9 @@
       const dashboardBtn = document.getElementById("dashboardBtn");
       if (dashboardBtn) {
         dashboardBtn.addEventListener("click", function () {
-          window.location.href = "dashboard.html"; // เปลี่ยน /dashboard เป็น dashboard.html สำหรับ static
+          window.location.href = "dashboard.html";
         });
       }
-
-      // --- Register Service Worker for PWA (ของเดิม) ---
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("static/sw.js")
           .then((reg) => console.log("Service Worker registered.", reg))
