@@ -38,17 +38,28 @@
       </select>
     </section>
 
+    <!-- ====== บล็อคใหม่: ภาพสดจากกล้อง (รองรับโน้ตบุ๊ก+มือถือ) ====== -->
     <section class="video-section" style="max-width: 960px; margin: 2rem auto;">
       <h2>ภาพสดจากกล้อง</h2>
-      <div class="video-wrapper" style="text-align: center;">
-        <img id="liveImage" alt="Live camera stream" style="max-width: 100%; border-radius: 8px;" />
+
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+        <button id="startCamBtn" class="btn">▶️ เริ่มกล้อง</button>
+        <button id="toggleCamBtn" class="btn btn-secondary" type="button">🔁 สลับกล้อง</button>
+        <select id="cameraSelect" style="min-width:260px;"></select>
+        <button id="torchBtn" class="btn btn-secondary" type="button">💡 ไฟฉาย</button>
       </div>
+
+      <div class="video-wrapper" style="text-align: center; margin-top: 1rem;">
+        <video id="liveVideo" autoplay playsinline muted style="max-width: 100%; border-radius: 8px;"></video>
+      </div>
+
       <div style="text-align: center; margin-top: 1rem;">
         <button id="saveLiveBtn" style="padding: 0.6rem 1.2rem; font-size: 1rem; border-radius: 8px; background-color: #00b4d8; color: white; border: none; cursor: pointer;">
           💾 บันทึกคะแนนจากภาพสด
         </button>
       </div>
     </section>
+    <!-- =============================================================== -->
 
     <section class="canvas-section" style="max-width: 960px; margin: 2rem auto;">
       <h2>ผลการตรวจจับ</h2>
