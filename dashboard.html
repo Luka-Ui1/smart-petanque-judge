@@ -74,10 +74,14 @@
     form#deleteAllForm button:hover {
       background-color: #b02a36;
     }
+    main section {
+      overflow-x: auto; /* scroll ตารางบนมือถือ */
+    }
     table {
       width: 100%;
       border-collapse: collapse;
       font-size: 1rem;
+      min-width: 700px; /* ให้ table scroll บนมือถือถ้าเล็ก */
     }
     thead th {
       background: linear-gradient(135deg, #00b4d8, #007f7f);
@@ -105,21 +109,19 @@
       font-style: italic;
       text-align: center;
     }
-    /* ปุ่มลบในแต่ละแถว */
     .delete-btn {
       background-color: #e63946;
       color: white;
       border: none;
-      padding: 6px 12px;
+      padding: 10px 16px; /* ปรับใหญ่พอมือถือ touch */
       border-radius: 5px;
       cursor: pointer;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       transition: background-color 0.3s ease;
     }
     .delete-btn:hover {
       background-color: #b02a36;
     }
-    /* ลิงก์กลับหน้าแรก */
     .back-link {
       display: inline-block;
       margin-bottom: 1.5rem;
@@ -143,6 +145,34 @@
       letter-spacing: 1px;
       border-radius: 15px 15px 0 0;
       text-align: center;
+    }
+
+    /* ======================= Media Queries ======================= */
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem 1rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      .back-link {
+        display: block;
+        margin-bottom: 1rem;
+      }
+      table {
+        font-size: 0.9rem;
+      }
+      form#deleteAllForm button,
+      .delete-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
