@@ -1,0 +1,281 @@
+2025/06/20 22:05:30 [notice] 21308#1164: using the "select" event method
+2025/06/20 22:05:30 [notice] 21308#1164: nginx/1.13.12
+2025/06/20 22:05:30 [info] 21308#1164: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/20 22:05:30 [notice] 21308#1164: start worker processes
+2025/06/20 22:05:30 [notice] 21308#1164: start worker process 18800
+2025/06/20 22:05:30 [notice] 18800#3172: nginx/1.13.12
+2025/06/20 22:05:30 [info] 18800#3172: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/20 22:05:30 [notice] 18800#3172: create thread 5532
+2025/06/20 22:05:30 [notice] 18800#3172: create thread 1404
+2025/06/20 22:05:30 [notice] 18800#3172: create thread 5088
+2025/06/20 22:06:09 [error] 18800#5532: *1 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/history/history.css" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /history/history.css HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2025/06/20 22:06:09 [error] 18800#5532: *1 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/history/history.js" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /history/history.js HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2025/06/20 22:06:09 [error] 18800#5532: *2 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2025/06/20 22:07:09 [info] 18800#5532: *3 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8080
+2025/06/20 22:07:16 [info] 18800#5532: *4 client connected '192.168.169.107'
+2025/06/20 22:07:16 [info] 18800#5532: *4 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:07:16 [info] 18800#5532: *4 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:07:16 [info] 18800#5532: *4 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:11:19 [info] 18800#5532: *4 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:11:19 [info] 18800#5532: *4 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:18:17 [info] 18800#5532: *5 client connected '192.168.169.107'
+2025/06/20 22:18:17 [info] 18800#5532: *5 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:18:17 [info] 18800#5532: *5 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:18:17 [info] 18800#5532: *5 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:18:47 [info] 18800#5532: *5 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:18:47 [info] 18800#5532: *5 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:19:25 [info] 18800#5532: *6 client connected '192.168.169.107'
+2025/06/20 22:19:25 [info] 18800#5532: *6 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:19:25 [info] 18800#5532: *6 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:19:25 [info] 18800#5532: *6 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:22:37 [info] 18800#5532: *6 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host), client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:22:37 [info] 18800#5532: *6 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:22:37 [info] 18800#5532: *6 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/20 22:31:39 [info] 18800#5532: *7 client 192.168.169.107 closed keepalive connection
+2025/06/20 22:31:57 [error] 18800#5532: *8 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/20 22:31:59 [info] 18800#5532: *9 client 192.168.169.107 closed keepalive connection
+2025/06/20 22:32:08 [error] 18800#5532: *10 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/20 22:32:08 [info] 18800#5532: *10 client 192.168.169.107 closed keepalive connection
+2025/06/20 22:32:08 [error] 18800#5532: *11 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/20 22:32:08 [info] 18800#5532: *11 client 192.168.169.107 closed keepalive connection
+2025/06/20 22:50:06 [info] 18800#5532: *12 client 192.168.135.8 closed keepalive connection
+2025/06/20 22:50:24 [error] 18800#5532: *13 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.8, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.8"
+2025/06/20 22:50:26 [info] 18800#5532: *14 client 192.168.135.8 closed keepalive connection
+2025/06/20 22:50:36 [error] 18800#5532: *15 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.8, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.8"
+2025/06/20 22:50:36 [info] 18800#5532: *15 client 192.168.135.8 closed keepalive connection
+2025/06/20 22:50:36 [error] 18800#5532: *16 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.8, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.8"
+2025/06/20 22:50:36 [info] 18800#5532: *16 client 192.168.135.8 closed keepalive connection
+2025/06/21 00:01:25 [info] 18800#5532: *17 client 192.168.169.107 closed keepalive connection
+2025/06/21 00:01:42 [error] 18800#5532: *18 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/21 00:01:44 [info] 18800#5532: *19 client 192.168.169.107 closed keepalive connection
+2025/06/21 00:01:54 [error] 18800#5532: *20 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/21 00:01:54 [info] 18800#5532: *20 client 192.168.169.107 closed keepalive connection
+2025/06/21 00:01:54 [error] 18800#5532: *21 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/21 00:01:54 [info] 18800#5532: *21 client 192.168.169.107 closed keepalive connection
+2025/06/21 00:07:09 [error] 18800#5532: *22 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/history/history.css" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /history/history.css HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2025/06/21 00:07:09 [error] 18800#5532: *22 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/history/history.js" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /history/history.js HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2025/06/21 00:07:24 [error] 18800#5532: *25 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/history/history.css" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /history/history.css HTTP/1.1", host: "192.168.169.107:8080", referrer: "http://192.168.169.107:8080/"
+2025/06/21 00:07:24 [error] 18800#5532: *26 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/history/history.js" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /history/history.js HTTP/1.1", host: "192.168.169.107:8080", referrer: "http://192.168.169.107:8080/"
+2025/06/21 00:07:25 [error] 18800#5532: *27 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.169.107:8080", referrer: "http://192.168.169.107:8080/"
+2025/06/21 00:08:09 [info] 18800#5532: *24 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8080
+2025/06/21 00:09:38 [info] 18800#5532: *28 client connected '192.168.169.107'
+2025/06/21 00:09:38 [info] 18800#5532: *28 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:09:38 [info] 18800#5532: *28 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:09:38 [info] 18800#5532: *28 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:11:42 [info] 18800#5532: *28 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:11:42 [info] 18800#5532: *28 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:11:44 [info] 18800#5532: *29 client connected '192.168.169.107'
+2025/06/21 00:11:44 [info] 18800#5532: *29 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:11:44 [info] 18800#5532: *29 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:11:44 [info] 18800#5532: *29 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:15:01 [info] 18800#5532: *30 client connected '192.168.169.107'
+2025/06/21 00:15:01 [info] 18800#5532: *30 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:15:01 [info] 18800#5532: *30 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:15:01 [info] 18800#5532: *30 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:15:31 [info] 18800#5532: *30 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:15:31 [info] 18800#5532: *30 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:44 [info] 18800#5532: *29 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:44 [info] 18800#5532: *29 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:44 [info] 18800#5532: *31 client connected '192.168.169.107'
+2025/06/21 00:17:44 [info] 18800#5532: *31 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:44 [info] 18800#5532: *31 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:44 [info] 18800#5532: *31 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:49 [info] 18800#5532: *31 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:49 [info] 18800#5532: *31 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:49 [info] 18800#5532: *32 client connected '192.168.169.107'
+2025/06/21 00:17:49 [info] 18800#5532: *32 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:49 [info] 18800#5532: *32 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:17:49 [info] 18800#5532: *32 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:18:15 [info] 18800#5532: *32 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:18:15 [info] 18800#5532: *32 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:18:15 [info] 18800#5532: *33 client connected '192.168.169.107'
+2025/06/21 00:18:15 [info] 18800#5532: *33 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:18:15 [info] 18800#5532: *33 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:18:15 [info] 18800#5532: *33 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:19:06 [info] 18800#5532: *33 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:19:06 [info] 18800#5532: *33 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:19:17 [info] 18800#5532: *34 client connected '192.168.169.107'
+2025/06/21 00:19:17 [info] 18800#5532: *34 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:19:17 [info] 18800#5532: *34 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:19:17 [info] 18800#5532: *34 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:21:13 [info] 18800#5532: *34 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:21:13 [info] 18800#5532: *34 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:21:13 [info] 18800#5532: *35 client connected '192.168.169.107'
+2025/06/21 00:21:13 [info] 18800#5532: *35 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:21:13 [info] 18800#5532: *35 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:21:13 [info] 18800#5532: *35 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:25:30 [info] 18800#5532: *35 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:25:30 [info] 18800#5532: *35 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:25:30 [info] 18800#5532: *36 client connected '192.168.169.107'
+2025/06/21 00:25:30 [info] 18800#5532: *36 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:25:30 [info] 18800#5532: *36 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:25:30 [info] 18800#5532: *36 play: name='112233' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:33:43 [info] 18800#5532: *36 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:33:43 [info] 18800#5532: *36 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:34:42 [notice] 7668#7988: signal process started
+2025/06/21 00:47:46 [info] 18800#5532: *37 client connected '192.168.169.107'
+2025/06/21 00:47:46 [info] 18800#5532: *37 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:47:46 [info] 18800#5532: *37 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:47:46 [info] 18800#5532: *37 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:48:16 [info] 18800#5532: *37 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:48:16 [info] 18800#5532: *37 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:48:27 [info] 18800#5532: *38 client connected '192.168.169.107'
+2025/06/21 00:48:27 [info] 18800#5532: *38 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:48:27 [info] 18800#5532: *38 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:48:27 [info] 18800#5532: *38 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:48:57 [info] 18800#5532: *38 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:48:57 [info] 18800#5532: *38 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:51:13 [notice] 24248#20728: signal process started
+2025/06/21 00:54:51 [info] 18800#5532: *39 client connected '192.168.169.107'
+2025/06/21 00:54:51 [info] 18800#5532: *39 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:54:51 [info] 18800#5532: *39 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:54:51 [info] 18800#5532: *39 play: name='112233' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:55:21 [info] 18800#5532: *39 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:55:21 [info] 18800#5532: *39 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:55:27 [info] 18800#5532: *40 client connected '192.168.169.107'
+2025/06/21 00:55:27 [info] 18800#5532: *40 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:55:27 [info] 18800#5532: *40 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:55:27 [info] 18800#5532: *40 play: name='112233' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:55:57 [info] 18800#5532: *40 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:55:57 [info] 18800#5532: *40 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:56:03 [info] 18800#5532: *41 client connected '192.168.169.107'
+2025/06/21 00:56:03 [info] 18800#5532: *41 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:56:03 [info] 18800#5532: *41 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:56:03 [info] 18800#5532: *41 play: name='112233' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:56:33 [info] 18800#5532: *41 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:56:33 [info] 18800#5532: *41 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 00:59:04 [info] 18800#5532: *42 client connected '10.50.17.151'
+2025/06/21 00:59:04 [info] 18800#5532: *42 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://10.50.17.151:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 10.50.17.151, server: 0.0.0.0:1935
+2025/06/21 00:59:04 [info] 18800#5532: *42 createStream, client: 10.50.17.151, server: 0.0.0.0:1935
+2025/06/21 00:59:04 [info] 18800#5532: *42 play: name='112233' args='' start=-2000 duration=0 reset=0 silent=0, client: 10.50.17.151, server: 0.0.0.0:1935
+2025/06/21 00:59:34 [info] 18800#5532: *42 disconnect, client: 10.50.17.151, server: 0.0.0.0:1935
+2025/06/21 00:59:34 [info] 18800#5532: *42 deleteStream, client: 10.50.17.151, server: 0.0.0.0:1935
+2025/06/21 01:01:19 [notice] 22668#4716: signal process started
+2025/06/21 01:06:31 [info] 18800#5532: *43 client 192.168.169.107 closed keepalive connection
+2025/06/21 01:08:41 [info] 18800#5532: *44 client 192.168.169.107 closed keepalive connection
+2025/06/21 01:08:58 [error] 18800#5532: *45 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/21 01:09:01 [info] 18800#5532: *46 client 192.168.169.107 closed keepalive connection
+2025/06/21 01:09:10 [error] 18800#5532: *47 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/21 01:09:10 [info] 18800#5532: *47 client 192.168.169.107 closed keepalive connection
+2025/06/21 01:09:10 [error] 18800#5532: *48 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/21 01:09:10 [info] 18800#5532: *48 client 192.168.169.107 closed keepalive connection
+2025/06/21 01:17:22 [info] 18800#5532: *49 client connected '192.168.169.107'
+2025/06/21 01:17:22 [info] 18800#5532: *49 connect: app='1935' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/1935' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:17:22 [info] 18800#5532: *49 connect: application not found: '1935', client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:17:22 [info] 18800#5532: *49 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:17:22 [info] 18800#5532: *49 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:17:37 [info] 18800#5532: *50 client connected '192.168.169.107'
+2025/06/21 01:17:37 [info] 18800#5532: *50 connect: app='1935' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/1935' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:17:37 [info] 18800#5532: *50 connect: application not found: '1935', client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:17:37 [info] 18800#5532: *50 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:17:37 [info] 18800#5532: *50 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:22:30 [info] 18800#5532: *51 client connected '192.168.169.107'
+2025/06/21 01:22:30 [info] 18800#5532: *51 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:22:30 [info] 18800#5532: *51 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:22:30 [info] 18800#5532: *51 play: name='112233' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:23:12 [info] 18800#5532: *52 client connected '192.168.169.107'
+2025/06/21 01:23:12 [info] 18800#5532: *52 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:23:12 [info] 18800#5532: *52 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:23:12 [info] 18800#5532: *52 play: name='112233' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:23:42 [info] 18800#5532: *52 disconnect, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:23:42 [info] 18800#5532: *52 deleteStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:31:43 [notice] 7884#15760: signal process started
+2025/06/21 01:33:44 [info] 18800#5532: *53 client connected '192.168.169.136'
+2025/06/21 01:33:44 [info] 18800#5532: *53 connect: app='live' args='' flashver='' swf_url='' tc_url='rtmp://192.168.169.107/live' page_url='' acodecs=0 vcodecs=0 object_encoding=0, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/21 01:33:44 [info] 18800#5532: *53 createStream, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/21 01:33:44 [info] 18800#5532: *53 publish: name='stream' args='' type=live silent=0, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/21 01:34:05 [info] 18800#5532: *54 client connected '192.168.169.107'
+2025/06/21 01:34:05 [info] 18800#5532: *54 connect: app='live' args='' flashver='LNX 9,0,124,2' swf_url='' tc_url='rtmp://192.168.169.107:1935/live' page_url='' acodecs=4071 vcodecs=252 object_encoding=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:34:05 [info] 18800#5532: *54 createStream, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:34:05 [info] 18800#5532: *54 play: name='stream' args='' start=-2000 duration=0 reset=0 silent=0, client: 192.168.169.107, server: 0.0.0.0:1935
+2025/06/21 01:42:00 [notice] 22352#13748: signal process started
+2025/06/21 01:42:00 [error] 22352#13748: CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2025/06/21 16:48:18 [error] 12740#3956: *6 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.70, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.70"
+2025/06/21 16:48:20 [error] 12740#3956: *8 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.70, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.70"
+2025/06/21 16:48:20 [error] 12740#3956: *9 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.70, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.70"
+2025/06/21 16:48:21 [error] 12740#3956: *10 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/boaform/formPing" failed (3: The system cannot find the path specified), client: 192.168.135.70, server: , request: "POST /boaform/formPing HTTP/1.1", host: "192.168.135.70:8080"
+2025/06/21 18:00:17 [error] 12740#3956: *12 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.118, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.118"
+2025/06/21 18:00:19 [error] 12740#3956: *14 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.118, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.118"
+2025/06/21 18:00:19 [error] 12740#3956: *15 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.118, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.118"
+2025/06/22 17:36:09 [notice] 10532#12992: signal process started
+2025/06/22 17:39:15 [notice] 16824#16428: signal process started
+2025/06/22 17:39:20 [notice] 16056#14852: signal process started
+2025/06/22 17:39:20 [error] 16056#14852: CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2025/06/22 17:54:09 [error] 4252#9464: *4 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/22 17:54:11 [error] 4252#9464: *6 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/22 17:54:11 [error] 4252#9464: *7 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/22 18:51:33 [error] 4252#9464: *9 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.113, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.113"
+2025/06/22 18:51:35 [error] 4252#9464: *11 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.113, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.113"
+2025/06/22 18:51:35 [error] 4252#9464: *12 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.113, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.113"
+2025/06/22 19:35:07 [notice] 16972#3640: signal process started
+2025/06/22 19:37:56 [error] 4252#9464: *17 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/22 19:37:58 [error] 4252#9464: *19 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/22 19:37:58 [error] 4252#9464: *20 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/22 19:37:58 [error] 4252#9464: *21 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/boaform/admin/formTracert" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "POST /boaform/admin/formTracert HTTP/1.1", host: "192.168.169.107:8080"
+2025/06/22 19:39:38 [notice] 7696#19928: signal process started
+2025/06/22 19:45:38 [notice] 10500#1832: signal process started
+2025/06/22 19:59:22 [error] 4252#9464: *36 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.139, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.139"
+2025/06/22 19:59:25 [error] 4252#9464: *38 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.139, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.139"
+2025/06/22 19:59:25 [error] 4252#9464: *39 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.139, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.139"
+2025/06/22 19:59:28 [error] 4252#9464: *40 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/boaform/admin/formPing/diag_ping.asp" failed (3: The system cannot find the path specified), client: 192.168.135.139, server: , request: "GET /boaform/admin/formPing/diag_ping.asp HTTP/1.1", host: "192.168.135.139:8080"
+2025/06/22 20:01:51 [notice] 6828#10468: signal process started
+2025/06/22 20:07:47 [error] 4252#9464: *42 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.49, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.49"
+2025/06/22 20:07:49 [error] 4252#9464: *44 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.49, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.49"
+2025/06/22 20:07:49 [error] 4252#9464: *45 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.49, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.49"
+2025/06/22 20:07:50 [error] 4252#9464: *46 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/boaform/formTracert" failed (3: The system cannot find the path specified), client: 192.168.135.49, server: , request: "POST /boaform/formTracert HTTP/1.1", host: "192.168.135.49:8080"
+2025/06/22 20:22:55 [error] 4252#9464: *48 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.32, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.32"
+2025/06/22 20:22:57 [error] 4252#9464: *50 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.32, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.32"
+2025/06/22 20:22:57 [error] 4252#9464: *51 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.32, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.32"
+2025/06/23 00:51:50 [error] 4252#9464: *53 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.178, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.178"
+2025/06/23 00:51:53 [error] 4252#9464: *55 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.178, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.178"
+2025/06/23 00:51:53 [error] 4252#9464: *56 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.178, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.178"
+2025/06/23 00:55:58 [error] 4252#9464: *58 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.221, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.221"
+2025/06/23 00:56:00 [error] 4252#9464: *60 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.221, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.221"
+2025/06/23 00:56:00 [error] 4252#9464: *61 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.221, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.221"
+2025/06/23 01:45:26 [error] 4252#9464: *63 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.8, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.8"
+2025/06/23 01:45:28 [error] 4252#9464: *65 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.8, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.8"
+2025/06/23 01:45:28 [error] 4252#9464: *66 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.8, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.8"
+2025/06/23 01:45:36 [error] 4252#9464: *67 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/boaform/admin/formTracert" failed (3: The system cannot find the path specified), client: 192.168.135.8, server: , request: "POST /boaform/admin/formTracert HTTP/1.1", host: "192.168.135.8:8080"
+2025/06/23 07:02:44 [error] 4252#9464: *69 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.237, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.237"
+2025/06/23 07:02:46 [error] 4252#9464: *71 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.237, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.237"
+2025/06/23 07:02:46 [error] 4252#9464: *72 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.237, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.237"
+2025/06/23 15:12:16 [error] 20096#19072: *3 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/23 15:12:18 [error] 20096#19072: *5 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/23 15:12:18 [error] 20096#19072: *6 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/29 21:22:29 [error] 6064#9440: *9 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.54, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.54"
+2025/06/29 21:22:31 [error] 6064#9440: *11 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.54, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.54"
+2025/06/29 21:22:31 [error] 6064#9440: *12 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.54, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.54"
+2025/06/30 13:52:23 [error] 4384#19836: *2 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/30 13:52:25 [error] 4384#19836: *4 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/30 13:52:25 [error] 4384#19836: *5 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/30 14:11:46 [error] 4384#19836: *11 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/live/stream.m3u8" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /live/stream.m3u8 HTTP/1.1", host: "localhost:8080"
+2025/06/30 14:11:46 [error] 4384#19836: *11 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/live/stream.m3u8"
+2025/06/30 15:27:15 [error] 4384#19836: *20 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/30 15:27:17 [error] 4384#19836: *22 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/30 15:27:17 [error] 4384#19836: *23 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/30 16:30:27 [error] 4384#19836: *27 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.233, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.233"
+2025/06/30 16:30:29 [error] 4384#19836: *29 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.233, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.233"
+2025/06/30 16:30:29 [error] 4384#19836: *30 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.233, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.233"
+2025/06/30 20:13:33 [error] 4384#19836: *33 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/30 20:13:35 [error] 4384#19836: *35 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/30 20:13:35 [error] 4384#19836: *36 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/30 20:17:11 [notice] 8544#1928: signal process started
+2025/06/30 20:39:48 [error] 4384#19836: *41 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/30 20:39:50 [error] 4384#19836: *43 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/30 20:39:50 [error] 4384#19836: *44 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/30 20:40:08 [error] 4384#19836: *45 live: already publishing, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/30 20:40:59 [error] 4384#19836: *47 live: already publishing, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/30 20:41:52 [error] 4384#19836: *48 live: already publishing, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/30 20:42:43 [error] 4384#19836: *49 live: already publishing, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/30 20:43:42 [error] 4384#19836: *50 live: already publishing, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/30 20:44:39 [error] 4384#19836: *54 live: already publishing, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/30 20:45:54 [error] 4384#19836: *55 live: already publishing, client: 192.168.169.136, server: 0.0.0.0:1935
+2025/06/30 20:50:06 [error] 4384#19836: *57 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.135.35, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.135.35"
+2025/06/30 20:50:08 [error] 4384#19836: *59 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.135.35, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.135.35"
+2025/06/30 20:50:08 [error] 4384#19836: *60 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.135.35, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.135.35"
+2025/06/30 21:13:13 [error] 4384#19836: *64 "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/HNAP1/index.html" is not found (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /HNAP1/ HTTP/1.1", host: "192.168.169.107"
+2025/06/30 21:13:15 [error] 4384#19836: *66 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/loginMsg.js" failed (2: The system cannot find the file specified), client: 192.168.169.107, server: , request: "GET /loginMsg.js HTTP/1.1", host: "192.168.169.107"
+2025/06/30 21:13:15 [error] 4384#19836: *67 CreateFile() "D:\drone_object_detection-main\nginx-rtmp-win32-1.2.1/html/cgi/get.cgi" failed (3: The system cannot find the path specified), client: 192.168.169.107, server: , request: "GET /cgi/get.cgi?cmd=home_login HTTP/1.1", host: "192.168.169.107"
+2025/06/30 21:19:34 [notice] 19260#17588: signal process started
+2025/07/02 22:06:34 [notice] 10564#20260: signal process started
+2025/07/02 22:40:34 [notice] 16892#18960: signal process started

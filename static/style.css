@@ -1,0 +1,472 @@
+/* Reset และตั้งค่าเบื้องต้น */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #005f73;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+main {
+  flex: 1;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  margin-bottom: 0.8rem;
+  color: #0a9396;
+  border-bottom: 3px solid #94d2bd;
+  padding-bottom: 0.3rem;
+}
+
+.video-section, .canvas-section, .upload-section, .score-section, .status-section, .competition-type-section {
+  margin-bottom: 2.5rem;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+}
+
+.video-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  border: 2px solid #0a9396;
+  border-radius: 8px;
+}
+
+#liveImage {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+canvas#canvas {
+  width: 100%;
+  max-height: 480px;
+  border: 2px solid #0a9396;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  background-color: #e9f5f5;
+}
+
+.upload-section input[type="file"] {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #0a9396;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #007f7f;
+}
+
+.btn-secondary {
+  background-color: #94d2bd;
+  color: #004d40;
+}
+
+.btn-secondary:hover {
+  background-color: #70b8a9;
+}
+
+.file-preview img {
+  max-width: 140px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1.5px solid #0a9396;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.score-box {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team {
+  flex: 1 1 250px;
+  background-color: #caf0f8;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  text-align: center;
+}
+
+.team h3 {
+  margin-bottom: 0.8rem;
+  color: #005f73;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0a9396;
+  margin-bottom: 0.8rem;
+}
+
+.progress-bar {
+  background-color: #e0f7fa;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 18px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  transition: width 0.3s ease;
+}
+
+.score-display {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0077b6;
+  text-align: center;
+}
+
+.status-message {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #2d6a4f;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #005f73;
+  color: white;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 8px rgb(0 0 0 / 0.15);
+}
+
+/* ส่วนของ select สำหรับประเภทการแข่งขัน */
+.competition-select {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: 1.5px solid #0a9396;
+  background-color: white;
+  color: #005f73;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.competition-select:hover,
+.competition-select:focus {
+  border-color: #007f7f;
+  outline: none;
+}
+
+/* ปรับ header ให้ดูโมเดิร์นและมีเงานุ่ม */
+header {
+  background: linear-gradient(135deg, #007f7f, #00b4d8);
+  color: #e0f7fa;
+  padding: 2rem 2rem;
+  box-shadow: 0 6px 15px rgba(0, 127, 127, 0.6);
+  border-radius: 0 0 25px 25px;
+  letter-spacing: 1.2px;
+}
+
+/* header h1 เพิ่ม shadow ตัวหนังสือ */
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  margin-bottom: 0.4rem;
+}
+
+/* header p เพิ่มความบาง */
+header p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* ปรับ main ให้เพิ่ม padding */
+main {
+  max-width: 960px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+/* section ทุกอันมีเงาและ transition */
+.video-section, .canvas-section, .upload-section, .score-section, .status-section, .competition-type-section {
+  margin-bottom: 3rem;
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 128, 128, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+.video-section:hover, 
+.canvas-section:hover, 
+.upload-section:hover, 
+.score-section:hover, 
+.status-section:hover, 
+.competition-type-section:hover {
+  box-shadow: 0 12px 35px rgba(0, 128, 128, 0.3);
+}
+
+/* ปรับหัวข้อ h2 ใหญ่ขึ้นและมีสีอ่อน */
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #007f7f;
+  border-bottom: 4px solid #00b4d8;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.8px;
+}
+
+/* video-wrapper และ liveImage ทำขอบ radius ใหญ่ขึ้น และเพิ่ม shadow */
+.video-wrapper {
+  border-radius: 12px;
+  border: 3px solid #00b4d8;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,180,216,0.3);
+}
+
+#liveImage {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* canvas ทำ shadow และ border radius */
+canvas#canvas {
+  border-radius: 15px;
+  border: 3px solid #007f7f;
+  box-shadow: 0 7px 25px rgba(0,127,127,0.25);
+  max-height: 500px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: #e0f9f9;
+}
+
+/* upload input ปรับให้ใหญ่ขึ้น และเพิ่มโทนฟ้า */
+.upload-section input[type="file"] {
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #00b4d8;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.3s ease;
+}
+.upload-section input[type="file"]:hover,
+.upload-section input[type="file"]:focus {
+  border-color: #007f7f;
+  outline: none;
+}
+
+/* ปรับปุ่มใหญ่ขึ้นและเพิ่มเงา */
+.btn {
+  background-color: #00b4d8;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,180,216,0.5);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #007f7f;
+  box-shadow: 0 6px 25px rgba(0,127,127,0.7);
+}
+
+.btn-secondary {
+  background-color: #94d2bd;
+  color: #004d40;
+  box-shadow: 0 4px 15px rgba(148,210,189,0.5);
+}
+.btn-secondary:hover {
+  background-color: #70b8a9;
+  box-shadow: 0 6px 25px rgba(112,184,169,0.7);
+}
+
+/* file preview ปรับภาพใหญ่ขึ้นและเงา */
+.file-preview img {
+  max-width: 160px;
+  border-radius: 12px;
+  border: 2px solid #00b4d8;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 15px rgba(0,180,216,0.4);
+}
+
+/* score box ปรับ flex ให้กว้างและ spacing ดี */
+.score-box {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.team {
+  flex: 1 1 280px;
+  background: linear-gradient(135deg, #caf0f8, #90e0ef);
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,180,216,0.25);
+  text-align: center;
+  transition: background 0.3s ease;
+}
+.team:hover {
+  background: linear-gradient(135deg, #90e0ef, #48cae4);
+  box-shadow: 0 7px 30px rgba(0,180,216,0.4);
+}
+
+.team h3 {
+  color: #007f7f;
+  margin-bottom: 1rem;
+  letter-spacing: 0.8px;
+}
+
+.score-value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #023e8a;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+  background-color: #caf0f8;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 22px;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #0077b6, #023e8a);
+  transition: width 0.4s ease;
+}
+
+/* score display */
+.score-display {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0077b6;
+  text-align: center;
+  margin-top: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* status message ปรับสีและขนาด */
+.status-message {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #2a9d8f;
+  text-align: center;
+  padding: 1rem 0;
+  font-style: italic;
+}
+
+/* competition select - เพิ่มไอคอนด้วย background image แบบง่าย */
+.competition-select {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: 2px solid #00b4d8;
+  background-color: white;
+  color: #007f7f;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23007f7f" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 18px 18px;
+}
+.competition-select:hover,
+.competition-select:focus {
+  border-color: #007f7f;
+  outline: none;
+}
+
+/* footer ปรับ background gradient */
+footer {
+  background: linear-gradient(135deg, #007f7f, #00b4d8);
+  color: #e0f7fa;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  box-shadow: 0 -5px 15px rgba(0, 127, 127, 0.5);
+  letter-spacing: 1px;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+
+/* เงาและเอฟเฟกต์สำหรับปุ่ม บันทึกแมตช์ และ บันทึกคะแนนจากภาพสด */
+#saveMatchBtn,
+#saveLiveBtn {
+  background-color: #00b4d8;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,180,216,0.5);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#saveMatchBtn:hover,
+#saveLiveBtn:hover {
+  background-color: #007f7f;
+  box-shadow: 0 6px 25px rgba(0,127,127,0.7);
+}

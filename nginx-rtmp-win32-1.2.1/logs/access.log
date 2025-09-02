@@ -1,0 +1,244 @@
+127.0.0.1 - - [20/Jun/2025:22:06:09 +0700] "GET / HTTP/1.1" 200 5859 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [20/Jun/2025:22:06:09 +0700] "GET /history/history.css HTTP/1.1" 404 572 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [20/Jun/2025:22:06:09 +0700] "GET /history/history.js HTTP/1.1" 404 572 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [20/Jun/2025:22:06:09 +0700] "GET /swfobject.js HTTP/1.1" 200 10220 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [20/Jun/2025:22:06:09 +0700] "GET /favicon.ico HTTP/1.1" 404 572 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+192.168.169.107 [20/Jun/2025:22:11:19 +0700] PLAY "live" "stream" "" - 406 490 "" "LNX 9,0,124,2" (4m 3s)
+192.168.169.107 [20/Jun/2025:22:18:47 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [20/Jun/2025:22:22:37 +0700] PLAY "live" "stream" "" - 399 472 "" "LNX 9,0,124,2" (3m 12s)
+192.168.169.107 - - [20/Jun/2025:22:31:39 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [20/Jun/2025:22:31:57 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [20/Jun/2025:22:31:59 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [20/Jun/2025:22:32:08 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [20/Jun/2025:22:32:08 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.8 - - [20/Jun/2025:22:50:06 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.8 - - [20/Jun/2025:22:50:24 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.8 - - [20/Jun/2025:22:50:26 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.8 - - [20/Jun/2025:22:50:36 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.8 - - [20/Jun/2025:22:50:36 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [21/Jun/2025:00:01:25 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [21/Jun/2025:00:01:42 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [21/Jun/2025:00:01:44 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [21/Jun/2025:00:01:54 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [21/Jun/2025:00:01:54 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+127.0.0.1 - - [21/Jun/2025:00:07:09 +0700] "GET / HTTP/1.1" 200 5859 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [21/Jun/2025:00:07:09 +0700] "GET /history/history.css HTTP/1.1" 404 572 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [21/Jun/2025:00:07:09 +0700] "GET /history/history.js HTTP/1.1" 404 572 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [21/Jun/2025:00:07:09 +0700] "GET /swfobject.js HTTP/1.1" 200 10220 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+192.168.169.107 - - [21/Jun/2025:00:07:24 +0700] "GET / HTTP/1.1" 200 5859 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+192.168.169.107 - - [21/Jun/2025:00:07:24 +0700] "GET /history/history.css HTTP/1.1" 404 572 "http://192.168.169.107:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+192.168.169.107 - - [21/Jun/2025:00:07:24 +0700] "GET /history/history.js HTTP/1.1" 404 572 "http://192.168.169.107:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+192.168.169.107 - - [21/Jun/2025:00:07:24 +0700] "GET /swfobject.js HTTP/1.1" 200 10220 "http://192.168.169.107:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+192.168.169.107 - - [21/Jun/2025:00:07:25 +0700] "GET /favicon.ico HTTP/1.1" 404 572 "http://192.168.169.107:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+192.168.169.107 [21/Jun/2025:00:11:42 +0700] PLAY "live" "stream" "" - 392 454 "" "LNX 9,0,124,2" (2m 3s)
+192.168.169.107 [21/Jun/2025:00:15:31 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [21/Jun/2025:00:17:44 +0700] PLAY "live" "stream" "" - 413 508 "" "LNX 9,0,124,2" (5m 59s)
+192.168.169.107 [21/Jun/2025:00:17:49 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (4s)
+192.168.169.107 [21/Jun/2025:00:18:15 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (25s)
+192.168.169.107 [21/Jun/2025:00:19:06 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (50s)
+192.168.169.107 [21/Jun/2025:00:21:13 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (1m 56s)
+192.168.169.107 [21/Jun/2025:00:25:30 +0700] PLAY "live" "stream" "" - 406 490 "" "LNX 9,0,124,2" (4m 16s)
+192.168.169.107 [21/Jun/2025:00:33:43 +0700] PLAY "live" "112233" "" - 434 562 "" "LNX 9,0,124,2" (8m 12s)
+192.168.169.107 [21/Jun/2025:00:48:16 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [21/Jun/2025:00:48:57 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [21/Jun/2025:00:55:21 +0700] PLAY "live" "112233" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [21/Jun/2025:00:55:57 +0700] PLAY "live" "112233" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [21/Jun/2025:00:56:33 +0700] PLAY "live" "112233" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+10.50.17.151 [21/Jun/2025:00:59:34 +0700] PLAY "live" "112233" "" - 375 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 - - [21/Jun/2025:01:06:31 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [21/Jun/2025:01:08:41 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [21/Jun/2025:01:08:58 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [21/Jun/2025:01:09:01 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [21/Jun/2025:01:09:10 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [21/Jun/2025:01:09:10 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 [21/Jun/2025:01:23:42 +0700] PLAY "live" "112233" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [21/Jun/2025:01:44:26 +0700] PLAY "live" "stream" "" - 462 26152633 "" "LNX 9,0,124,2" (1m 22s)
+192.168.169.107 [21/Jun/2025:16:41:49 +0700] PLAY "live" "stream" "" - 420 2919 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [21/Jun/2025:16:43:55 +0700] PLAY "live" "stream" "" - 571 61226656 "" "LNX 9,0,124,2" (2m 1s)
+192.168.169.107 [21/Jun/2025:16:44:26 +0700] PLAY "live" "stream" "" - 398 5304789 "" "LNX 9,0,124,2" (10s)
+192.168.169.136 [21/Jun/2025:16:44:44 +0700] PUBLISH "live" "stream" "" - 88766859 529 "" "" (2m 55s)
+192.168.135.70 - - [21/Jun/2025:16:48:04 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.70 - - [21/Jun/2025:16:48:18 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.70 - - [21/Jun/2025:16:48:20 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.70 - - [21/Jun/2025:16:48:20 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.70 - - [21/Jun/2025:16:48:20 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.70 - - [21/Jun/2025:16:48:21 +0700] "POST /boaform/formPing HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.118 - - [21/Jun/2025:18:00:02 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.118 - - [21/Jun/2025:18:00:17 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.118 - - [21/Jun/2025:18:00:19 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.118 - - [21/Jun/2025:18:00:19 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.118 - - [21/Jun/2025:18:00:19 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 [22/Jun/2025:17:37:08 +0700] PLAY "live" "stream" "" - 414 10517517 "" "LNX 9,0,124,2" (11s)
+192.168.169.107 [22/Jun/2025:17:39:09 +0700] PLAY "live" "stream" "" - 526 46529250 "" "LNX 9,0,124,2" (47s)
+192.168.169.107 - - [22/Jun/2025:17:53:55 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 [22/Jun/2025:17:54:02 +0700] PLAY "live" "stream" "" - 422 12894621 "" "LNX 9,0,124,2" (24s)
+192.168.169.136 [22/Jun/2025:17:54:08 +0700] PUBLISH "live" "stream" "" - 18918848 529 "" "" (19s)
+192.168.169.107 - - [22/Jun/2025:17:54:09 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [22/Jun/2025:17:54:11 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [22/Jun/2025:17:54:11 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [22/Jun/2025:17:54:11 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.113 - - [22/Jun/2025:18:51:24 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.113 - - [22/Jun/2025:18:51:33 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.113 - - [22/Jun/2025:18:51:35 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.113 - - [22/Jun/2025:18:51:35 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.113 - - [22/Jun/2025:18:51:35 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 [22/Jun/2025:19:37:11 +0700] PLAY "live" "stream" "" - 390 4991243 "" "LNX 9,0,124,2" (15s)
+192.168.169.107 [22/Jun/2025:19:37:21 +0700] PLAY "live" "stream" "" - 390 4932703 "" "LNX 9,0,124,2" (5s)
+192.168.169.107 - - [22/Jun/2025:19:37:42 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [22/Jun/2025:19:37:56 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [22/Jun/2025:19:37:58 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [22/Jun/2025:19:37:58 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [22/Jun/2025:19:37:58 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [22/Jun/2025:19:37:58 +0700] "POST /boaform/admin/formTracert HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 [22/Jun/2025:19:39:16 +0700] PLAY "live" "stream" "" - 502 38841744 "" "LNX 9,0,124,2" (39s)
+192.168.169.107 [22/Jun/2025:19:41:33 +0700] PLAY "live" "stream" "" - 694 99300658 "" "LNX 9,0,124,2" (1m 39s)
+192.168.169.107 [22/Jun/2025:19:43:17 +0700] PLAY "live" "stream" "" - 390 4781895 "" "LNX 9,0,124,2" (4s)
+192.168.169.107 [22/Jun/2025:19:43:59 +0700] PLAY "live" "stream" "" - 406 9964268 "" "LNX 9,0,124,2" (10s)
+192.168.169.107 [22/Jun/2025:19:45:15 +0700] PLAY "live" "stream" "" - 598 68607501 "" "LNX 9,0,124,2" (1m 8s)
+192.168.169.107 [22/Jun/2025:19:47:47 +0700] PLAY "live" "stream" "" - 446 21097566 "" "LNX 9,0,124,2" (22s)
+192.168.169.107 [22/Jun/2025:19:48:32 +0700] PLAY "live" "stream" "" - 390 4810437 "" "LNX 9,0,124,2" (5s)
+192.168.169.107 [22/Jun/2025:19:49:34 +0700] PLAY "live" "stream" "" - 390 4885160 "" "LNX 9,0,124,2" (5s)
+192.168.169.136 [22/Jun/2025:19:50:23 +0700] PUBLISH "live" "stream" "" - 807359191 529 "" "" (13m 18s)
+192.168.169.107 [22/Jun/2025:19:50:51 +0700] PLAY "live" "stream" "" - 486 34737991 "" "LNX 9,0,124,2" (1m 3s)
+192.168.169.107 [22/Jun/2025:19:51:43 +0700] PLAY "live" "stream" "" - 390 4599595 "" "LNX 9,0,124,2" (10s)
+192.168.169.107 [22/Jun/2025:19:55:22 +0700] PLAY "live" "stream" "" - 420 23538 "" "LNX 9,0,124,2" (5s)
+192.168.169.107 [22/Jun/2025:19:55:49 +0700] PLAY "live" "stream" "" - 398 6083114 "" "LNX 9,0,124,2" (12s)
+192.168.169.136 [22/Jun/2025:19:57:20 +0700] PUBLISH "live" "stream" "" - 56658627 409 "" "" (5m 50s)
+192.168.135.139 - - [22/Jun/2025:19:59:13 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.139 - - [22/Jun/2025:19:59:22 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.139 - - [22/Jun/2025:19:59:25 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.139 - - [22/Jun/2025:19:59:25 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.139 - - [22/Jun/2025:19:59:25 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.139 - - [22/Jun/2025:19:59:28 +0700] "GET /boaform/admin/formPing/diag_ping.asp HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.49 - - [22/Jun/2025:20:07:38 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.49 - - [22/Jun/2025:20:07:47 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.49 - - [22/Jun/2025:20:07:49 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.49 - - [22/Jun/2025:20:07:49 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.49 - - [22/Jun/2025:20:07:49 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.49 - - [22/Jun/2025:20:07:50 +0700] "POST /boaform/formTracert HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.32 - - [22/Jun/2025:20:22:46 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.32 - - [22/Jun/2025:20:22:55 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.32 - - [22/Jun/2025:20:22:57 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.32 - - [22/Jun/2025:20:22:57 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.32 - - [22/Jun/2025:20:22:57 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.178 - - [23/Jun/2025:00:51:41 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.178 - - [23/Jun/2025:00:51:50 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.178 - - [23/Jun/2025:00:51:53 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.178 - - [23/Jun/2025:00:51:53 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.178 - - [23/Jun/2025:00:51:53 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.221 - - [23/Jun/2025:00:55:48 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.221 - - [23/Jun/2025:00:55:58 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.221 - - [23/Jun/2025:00:56:00 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.221 - - [23/Jun/2025:00:56:00 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.221 - - [23/Jun/2025:00:56:00 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.8 - - [23/Jun/2025:01:45:11 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.8 - - [23/Jun/2025:01:45:26 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.8 - - [23/Jun/2025:01:45:28 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.8 - - [23/Jun/2025:01:45:28 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.8 - - [23/Jun/2025:01:45:28 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.8 - - [23/Jun/2025:01:45:36 +0700] "POST /boaform/admin/formTracert HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.237 - - [23/Jun/2025:07:02:35 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.237 - - [23/Jun/2025:07:02:44 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.237 - - [23/Jun/2025:07:02:46 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.237 - - [23/Jun/2025:07:02:46 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.237 - - [23/Jun/2025:07:02:46 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [23/Jun/2025:15:12:08 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [23/Jun/2025:15:12:16 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [23/Jun/2025:15:12:18 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [23/Jun/2025:15:12:18 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [23/Jun/2025:15:12:18 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 [23/Jun/2025:15:12:42 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [23/Jun/2025:15:15:31 +0700] PLAY "live" "stream" "" - 523 46962291 "" "LNX 9,0,124,2" (47s)
+192.168.169.107 [23/Jun/2025:15:16:23 +0700] PLAY "live" "stream" "" - 494 37571159 "" "LNX 9,0,124,2" (37s)
+192.168.169.136 [23/Jun/2025:15:17:22 +0700] PUBLISH "live" "stream" "" - 119532653 409 "" "" (2m 44s)
+192.168.169.107 [29/Jun/2025:20:32:44 +0700] PLAY "live" "stream" "" - 494 37703636 "" "LNX 9,0,124,2" (38s)
+192.168.169.136 [29/Jun/2025:20:34:05 +0700] PUBLISH "live" "stream" "" - 131179137 529 "" "" (2m 10s)
+192.168.169.107 [29/Jun/2025:20:35:49 +0700] PLAY "live" "stream" "" - 486 33982907 "" "LNX 9,0,124,2" (34s)
+192.168.169.107 [29/Jun/2025:20:35:50 +0700] PLAY "live" "stream" "" - 510 41573074 "" "LNX 9,0,124,2" (42s)
+192.168.169.107 [29/Jun/2025:20:37:36 +0700] PLAY "live" "stream" "" - 662 90022633 "" "LNX 9,0,124,2" (1m 30s)
+192.168.169.107 [29/Jun/2025:20:37:36 +0700] PLAY "live" "stream" "" - 686 97718545 "" "LNX 9,0,124,2" (1m 38s)
+192.168.169.136 [29/Jun/2025:20:40:33 +0700] PUBLISH "live" "stream" "" - 335874558 529 "" "" (5m 38s)
+192.168.135.54 - - [29/Jun/2025:21:22:20 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.54 - - [29/Jun/2025:21:22:29 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.54 - - [29/Jun/2025:21:22:31 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.54 - - [29/Jun/2025:21:22:31 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.54 - - [29/Jun/2025:21:22:31 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:13:52:09 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:13:52:23 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:13:52:25 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [30/Jun/2025:13:52:25 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:13:52:25 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 [30/Jun/2025:13:53:23 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [30/Jun/2025:13:53:59 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [30/Jun/2025:13:55:55 +0700] PLAY "live" "stream" "" - 571 62367671 "" "LNX 9,0,124,2" (1m 2s)
+192.168.169.107 [30/Jun/2025:13:55:56 +0700] PLAY "live" "stream" "" - 598 70129715 "" "LNX 9,0,124,2" (1m 10s)
+127.0.0.1 - - [30/Jun/2025:14:11:46 +0700] "GET /live/stream.m3u8 HTTP/1.1" 404 572 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+127.0.0.1 - - [30/Jun/2025:14:11:46 +0700] "GET /favicon.ico HTTP/1.1" 404 572 "http://localhost:8080/live/stream.m3u8" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+192.168.169.107 [30/Jun/2025:14:29:58 +0700] PLAY "live" "stream" "" - 470 29673065 "" "LNX 9,0,124,2" (30s)
+192.168.169.107 [30/Jun/2025:14:36:59 +0700] PLAY "live" "stream" "" - 990 192274662 "" "LNX 9,0,124,2" (5m 25s)
+192.168.169.107 [30/Jun/2025:14:36:59 +0700] PLAY "live" "stream" "" - 1008 199346354 "" "LNX 9,0,124,2" (5m 33s)
+192.168.169.136 [30/Jun/2025:14:43:31 +0700] PUBLISH "live" "stream" "" - 2450880085 409 "" "" (49m 6s)
+192.168.169.107 - - [30/Jun/2025:15:27:01 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:15:27:15 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:15:27:17 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [30/Jun/2025:15:27:17 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:15:27:17 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 [30/Jun/2025:15:27:33 +0700] PLAY "live" "stream" "" - 582 64245825 "" "LNX 9,0,124,2" (1m 19s)
+192.168.169.107 [30/Jun/2025:15:28:23 +0700] PLAY "live" "stream" "" - 510 42565047 "" "LNX 9,0,124,2" (43s)
+192.168.169.107 [30/Jun/2025:15:28:58 +0700] PLAY "live" "stream" "" - 422 13745097 "" "LNX 9,0,124,2" (14s)
+192.168.169.136 [30/Jun/2025:15:30:52 +0700] PUBLISH "live" "stream" "" - 232941259 409 "" "" (4m 24s)
+192.168.135.233 - - [30/Jun/2025:16:30:18 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.233 - - [30/Jun/2025:16:30:27 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.233 - - [30/Jun/2025:16:30:29 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.233 - - [30/Jun/2025:16:30:29 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.233 - - [30/Jun/2025:16:30:29 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:20:13:19 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:20:13:33 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:20:13:35 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [30/Jun/2025:20:13:35 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:20:13:35 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:20:13:40 +0700] "POST / HTTP/1.1" 405 174 "-" "Avast Antivirus"
+192.168.169.136 [30/Jun/2025:20:17:30 +0700] PUBLISH "live" "stream" "" - 208943621 427 "" "" (5m 19s)
+192.168.169.107 - - [30/Jun/2025:20:39:34 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:20:39:48 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:20:39:50 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [30/Jun/2025:20:39:50 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:20:39:50 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 [30/Jun/2025:20:39:52 +0700] PLAY "live" "stream" "" - 378 2056 "" "LNX 9,0,124,2" (18s)
+192.168.169.107 [30/Jun/2025:20:40:29 +0700] PLAY "live" "stream" "" - 378 454 "" "LNX 9,0,124,2" (6s)
+192.168.169.136 [30/Jun/2025:20:43:42 +0700] PUBLISH "live" "stream" "" - 70548 427 "" "" (4m 0s)
+192.168.169.107 [30/Jun/2025:20:44:19 +0700] PLAY "live" "stream" "" - 378 436 "" "LNX 9,0,124,2" (30s)
+192.168.169.136 [30/Jun/2025:20:44:52 +0700] PUBLISH "live" "stream" "" - 20842 430 "" "" (3m 3s)
+192.168.169.107 [30/Jun/2025:20:44:54 +0700] PLAY "live" "stream" "" - 420 1634 "" "LNX 9,0,124,2" (30s)
+192.168.169.136 [30/Jun/2025:20:45:06 +0700] PUBLISH "live" "stream" "" - 125150 430 "" "" (5m 1s)
+192.168.169.136 [30/Jun/2025:20:46:00 +0700] PUBLISH "live" "stream" "" - 19327 430 "" "" (5m 3s)
+192.168.169.136 [30/Jun/2025:20:46:45 +0700] PUBLISH "live" "stream" "" - 22838 430 "" "" (4m 3s)
+192.168.169.136 [30/Jun/2025:20:46:51 +0700] PUBLISH "live" "stream" "" - 6163 412 "" "" (1m 20s)
+192.168.169.136 [30/Jun/2025:20:46:51 +0700] PUBLISH "live" "stream" "" - 33764 412 "" "" (3m 16s)
+192.168.169.136 [30/Jun/2025:20:46:51 +0700] PUBLISH "live" "stream" "" - 23165 409 "" "" (2m 26s)
+192.168.169.136 [30/Jun/2025:20:46:51 +0700] PUBLISH "live" "stream" "" - 118171 412 "" "" (2m 14s)
+192.168.135.35 - - [30/Jun/2025:20:49:57 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.135.35 - - [30/Jun/2025:20:50:06 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.135.35 - - [30/Jun/2025:20:50:08 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.135.35 - - [30/Jun/2025:20:50:08 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.135.35 - - [30/Jun/2025:20:50:08 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:21:12:59 +0700] "GET / HTTP/1.1" 200 5859 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:21:13:13 +0700] "GET /HNAP1/ HTTP/1.1" 404 170 "-" "Avast Antivirus"
+192.168.169.107 - - [30/Jun/2025:21:13:15 +0700] "GET / HTTP/1.1" 200 5859 "-" "-"
+192.168.169.107 - - [30/Jun/2025:21:13:15 +0700] "GET /loginMsg.js HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.107 - - [30/Jun/2025:21:13:15 +0700] "GET /cgi/get.cgi?cmd=home_login HTTP/1.1" 404 170 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+192.168.169.136 [30/Jun/2025:21:16:26 +0700] PUBLISH "live" "stream" "" - 164623980 529 "" "" (2m 43s)
+192.168.169.107 [30/Jun/2025:21:19:00 +0700] PLAY "live" "stream" "" - 874 148264566 "" "LNX 9,0,124,2" (5m 1s)
+192.168.169.107 [30/Jun/2025:21:19:00 +0700] PLAY "live" "stream" "" - 898 155279734 "" "LNX 9,0,124,2" (5m 9s)
+192.168.169.136 [02/Jul/2025:21:53:41 +0700] PUBLISH "live" "stream" "" - 349 529 "" "" (0s)
+192.168.169.136 [02/Jul/2025:21:55:42 +0700] PUBLISH "live" "stream" "" - 113956100 529 "" "" (1m 53s)
+192.168.169.107 [02/Jul/2025:21:56:56 +0700] PLAY "live" "stream" "" - 534 49681048 "" "LNX 9,0,124,2" (50s)
+192.168.169.107 [02/Jul/2025:21:56:57 +0700] PLAY "live" "stream" "" - 566 59505222 "" "LNX 9,0,124,2" (1m 0s)
+192.168.169.136 [02/Jul/2025:21:57:43 +0700] PUBLISH "live" "stream" "" - 72559900 409 "" "" (1m 53s)
+192.168.169.107 [02/Jul/2025:22:05:32 +0700] PLAY "live" "stream" "" - 534 49523834 "" "LNX 9,0,124,2" (1m 43s)
+192.168.169.136 [02/Jul/2025:22:05:32 +0700] PUBLISH "live" "stream" "" - 56036929 409 "" "" (1m 50s)
+192.168.169.107 [02/Jul/2025:22:05:32 +0700] PLAY "live" "stream" "" - 510 41473326 "" "LNX 9,0,124,2" (1m 36s)
+192.168.169.136 [02/Jul/2025:22:34:50 +0700] PUBLISH "live" "stream" "" - 4495877 529 "" "" (5s)
+192.168.169.107 [02/Jul/2025:22:36:40 +0700] PLAY "live" "stream" "" - 502 39186626 "" "LNX 9,0,124,2" (1m 11s)
+192.168.169.107 [02/Jul/2025:22:36:41 +0700] PLAY "live" "stream" "" - 518 44048408 "" "LNX 9,0,124,2" (1m 20s)
+192.168.169.136 [02/Jul/2025:22:36:59 +0700] PUBLISH "live" "stream" "" - 56076007 529 "" "" (1m 57s)
